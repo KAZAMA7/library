@@ -1,1 +1,30 @@
-<h1> Create a new page for the student record </h1>
+<%= form_with scope: :student, local: true do |form| %>
+  <p>
+    <%= form.label :first_name %><br>
+    <%= form.text_field :string %>
+  </p>
+ 
+  <p>
+    <%= form.label :last_name %><br>
+    <%= form.text_area :string %>
+  </p>
+ 
+ <p>
+    <%= form.label :date_of_birth %><br>
+    <%= form.text_area :date %>
+  </p>
+ 
+ <p>
+    <%= form.label :phone %><br>
+    <%= form.text_area :string %>
+  </p>
+ 
+ <p>
+    <%= form.label :address %><br>
+    <%= form.text_area :text %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
