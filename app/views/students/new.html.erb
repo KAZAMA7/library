@@ -1,27 +1,27 @@
 <%= form_with scope: :student, url: students_path, local: true do |form| %>
-  <p>
-    <%= form.label :first_name %><br>
-    <%= form.text_field :string %>
+  <p>	
+    <%= 'First Name' %><br>
+    <%= form.text_field :first_name %>
   </p>
  
   <p>
-    <%= form.label :last_name %><br>
-    <%= form.text_area :string %>
+    <%= 'Last Name' %><br>
+    <%= form.text_field :last_name %>
   </p>
  
  <p>
-    <%= form.label :date_of_birth %><br>
-    <%= form.text_area :date %>
+    <%= 'Date of Birth'%><br>
+    <%= form.text_area :date_of_birth %>
   </p>
  
  <p>
-    <%= form.label :phone %><br>
-    <%= form.text_area :string %>
+    <%= 'Phone' %><br>
+    <%= form.text_area :phone %>
   </p>
  
  <p>
-    <%= form.label :address %><br>
-    <%= form.text_area :text %>
+    <%= 'Address' %><br>
+    <%= form.text_area :address %>
   </p>
  
   <p>
